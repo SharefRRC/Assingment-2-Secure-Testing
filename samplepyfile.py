@@ -22,6 +22,7 @@ def get_data():
     data = urlopen(url).read().decode()
     return data
 
+#Test for python test
 def save_to_db(data):
     query = f"INSERT INTO mytable (column1, column2) VALUES ('{data}', 'Another Value')"
     connection = pymysql.connect(**db_config)
